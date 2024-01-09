@@ -8,13 +8,13 @@ Install the Redux library and the library developed specifically for React.
 
 Store Setup:
 
-Create a folder named 'redux' for Redux operations.
-Inside, create a file named 'store.js'.
-Import the createStore method from the Redux library.
-Categorize the data stored in the store, and create a reducer for each category.
-Combine the created reducers using the combineReducers method.
-Introduce the combined reducers to the store.
-Integrate the created store into the project.
+// Create a folder named 'redux' for Redux operations.
+// Inside, create a file named 'store.js'.
+// Import the createStore method from the Redux library.
+// Categorize the data stored in the store, and create a reducer for each category.
+// Combine the created reducers using the combineReducers method.
+I// ntroduce the combined reducers to the store.
+// Integrate the created store into the project.
 javascript
 // Example store
 import { createStore, combineReducers } from 'redux';
@@ -33,16 +33,16 @@ const rootReducer = combineReducers({
 export default createStore(rootReducer);
 Reducers Setup:
 
-Inside the 'redux' folder, create a subfolder to store reducers.
-Inside the reducer folder, create a file named '...reducer.js'.
-Create separate reducers for different data groups.
-*Reducer: A function that decides how the data in the store will change.
-Takes two parameters:
-State: The current state of the data in the store.
-Action: An object specifying how the store should be affected.
-The data returned from the reducer is the updated state of the store.
-'initialState' holds the initial values of the data to be stored.
-javascript
+// Inside the 'redux' folder, create a subfolder to store reducers.
+// Inside the reducer folder, create a file named '...reducer.js'.
+// Create separate reducers for different data groups.
+// *Reducer: A function that decides how the data in the store will change.
+// Takes two parameters:
+// State: The current state of the data in the store.
+// Action: An object specifying how the store should be affected.
+// The data returned from the reducer is the updated state of the store.
+v'initialState' holds the initial values of the data to be stored.
+// javascript
 // Example reducer
 const initialState = {
     todos: [],
